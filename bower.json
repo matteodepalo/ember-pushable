@@ -1,0 +1,21 @@
+{
+  "name": "ember-pushable",
+  "version": "1.0.0",
+  "authors": [
+    "Matteo Depalo <matteodepalo@gmail.com>"
+  ],
+  "description": "Make Ember controllers live with Pusher",
+  "main": "lib/ember-pushable.js",
+  "keywords": [
+    "ember",
+    "pusher"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
