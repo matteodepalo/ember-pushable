@@ -74,3 +74,7 @@ actions:
   }
 ```
 
+## Integrations
+
+This library works well with [pushable-rails](https://github.com/matteodepalo/pushable-rails)
+
