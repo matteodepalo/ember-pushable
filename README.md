@@ -53,6 +53,8 @@ These events expect a payload containing a representation of the model(s), in th
 }
 ```
 
+## Preventing duplicates
+
 Sometimes Pusher can be faster than your server. In this scenario it may happen that the Controller ends up with 2 models. One with no ID, which will be filled by the server later, and the Pusher entry with the ID.
 In order to help ember-data to avoid these duplicates you can pass a `client_id` with the model payload when saving to the server. This can be as simple as:
 
