@@ -67,7 +67,7 @@ You also have to add the newly created model to an array of `newRecords` in your
 ```javascript
 actions:
   createTask: function() {
-    var task = this.store.createRecord('task', { title: @get('title') })
+    var task = this.store.createRecord('task', { title: this.get('title') })
 
     this.get('newRecords').pushObject(task)
     task.save()
