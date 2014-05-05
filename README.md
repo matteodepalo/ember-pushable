@@ -56,10 +56,10 @@ These events expect a payload containing a representation of the model(s), in th
 ## Preventing duplicates
 
 Sometimes Pusher can be faster than your server. In this scenario it may happen that the Controller ends up with 2 models. One with no ID, which will be filled by the server later, and the Pusher entry with the ID.
-In order to help ember-data to avoid these duplicates you can pass a `client_id` with the model payload when saving to the server. This can be as simple as:
+In order to help ember-data to avoid these duplicates you can include the mixin `DS.Pushable` into your model. This will add a `client_id` attribute to the model payload when saving to the server. Example:
 
 ```javascript
-clientId: DS.attr('string', defaultValue: -> new Date().getTime().toString())
+App.Task = DS.Model.extend(DS.Pushable);
 ```
 
 You also have to add the newly created model to an array of `newRecords` in your controller. For example:
