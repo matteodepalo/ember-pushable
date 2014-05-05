@@ -28,11 +28,11 @@ App.TasksController = Ember.ArrayController.extend(new Ember.Pushable('task'))
 ```
 
 The `modelName` is the type of model in your controller `content` property.
-After including it `TasksController` will start responding to the following Pusher events:
+After including it `TasksController` will start responding to Pusher events.
+
+## Events
 
 Channel: `pusher`
-
-Events:
 
 - Create
 `task.destroy`
